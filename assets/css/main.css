@@ -1,0 +1,160 @@
+.slide-enter-from,
+.slide-leave-to {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.slide-enter-active {
+  transition: all 0.5s ease-in;
+}
+
+.slide-leave-active {
+  transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("assets/fonts/proximanovaregular-webfont.woff") format("woff"),
+      url("assets/fonts/proximanovaregular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("assets/fonts/proximanovabold-webfont.woff") format("woff"),
+      url("assets/fonts/proximanovabold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("assets/fonts/proximanovasemibold-webfont.woff") format("woff"),
+      url("assets/fonts/proximanovasemibold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-proxima-nova {
+  font-family: "ProximaNova-Regular";
+}
+
+.font-proxima-nova-bold {
+  font-family: "ProximaNova-Bold";
+}
+
+.font-proxima-nova-semibold {
+  font-family: "ProximaNova-Semibold";
+}
+
+.clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.appearance-none {
+  -moz-appearance: textfield;
+}
+
+.appearance-none::-webkit-outer-spin-button,
+.appearance-none::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-snap-y-parent {
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-snap-y-parent::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-snap-child-start {
+    scroll-snap-align: start;
+}
+
+.scroll-snap-child-end {
+    scroll-snap-align: end;
+}
+
+.scroll-snap-child-center {
+    scroll-snap-align: center;
+}
+
+*,
+*:focus,
+*:hover {
+    outline: none;
+}
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #050527;
+}
+
+body,
+a,
+button {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+button:active,
+button:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.hide-arrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

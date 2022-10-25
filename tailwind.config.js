@@ -13,6 +13,12 @@ module.exports = {
     ],
   },
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        md: '0',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
