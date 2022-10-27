@@ -10,6 +10,9 @@ export default defineNuxtConfig({
           content: "Amazing Game List Website",
         }
       ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' }
+      ],
     }
   },
   publicRuntimeConfig: {
@@ -22,6 +25,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "nuxt-icon",
+    '@nuxtjs/tailwindcss',
   ],
   nuxtIcon: {
     aliases: {

@@ -2,16 +2,14 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
-  content: {
-    files: [
-      "./components/**/*.{vue,js}",
-      "./layouts/**/*.vue",
-      "./pages/**/*.vue",
-      "./app.vue",
-      "./plugins/**/*.{js,ts}",
-      "./nuxt.config.{js,ts}",
-    ],
-  },
+  content: [
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./app.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
     container: {
       padding: {
@@ -35,7 +33,15 @@ module.exports = {
         '120': '34rem',
         '130': '36rem',
         '140': '38rem',
-        '160': '40rem',
+        '10vw': '10vw',
+        '20vw': '20vw',
+        '30vw': '30vw',
+        '40vw': '40vw',
+        '50vw': '50vw',
+        '60vw': '60vw',
+        '70vw': '70vw',
+        '80vw': '80vw',
+        '90vw': '90vw',
       },
     },
   },
@@ -48,4 +54,9 @@ module.exports = {
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],
+  // safelist: [
+  //   {
+  //       pattern: /.*/,
+  //   },
+  // ],
 };
